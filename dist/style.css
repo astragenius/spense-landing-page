@@ -325,3 +325,19 @@ li {
 
   color: #ffff;
 }
+
+.footer__flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.footer__flex > div {
+  border: 2px solid #fff;
+  flex: 50%;
+}
+
+.footer__flex ul {
+  margin: 0;
+  padding: 0;
+}
