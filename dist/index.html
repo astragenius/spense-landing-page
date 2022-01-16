@@ -12,32 +12,38 @@
 
     <header class="header">
 
-        <div class="header__notification"><p>To celebrate Spense's launch, we will be waiving all fees for the entire month of April. You will be receiving 100% of the earnings</p></div>
+        
+        <div class="wrapper">
+            <div class="header__notification full-bleed"><p>To celebrate Spense's launch, we will be waiving all fees for the entire month of April. You will be receiving 100% of the earnings</p></div>
+            
+            <div class="flex-container">
 
-        <h1 class="logo">
-            <a href="#">spense</a>
-        </h1>
-
-        <nav class="navigation" role="navigation">
-
-            <button aria-expanded="false" aria-controls="menu">
-                <span>Menu</span>
-            </button>
-
-            <ul id="menu" class="links-left">
-
-                <li><a href="#">Business</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Features</a></li>
-
-            </ul>
-            <ul id="menu" class="links-right">
-
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Get Started</a></li>
-
-            </ul>
-        </nav>
+                <h1 class="logo">
+                    <a href="#">spense.</a>
+                </h1>
+        
+                <nav class="navigation" role="navigation">
+        
+                    <button class="mobile-nav-btn" aria-expanded="false" aria-controls="menu">
+                        <span class="sr-only">Menu</span>
+                    </button>
+        
+                    <ul id="menu" class="nav nav--links-left hide">
+        
+                        <li><a href="#">Business</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Features</a></li>
+        
+                    </ul>
+                    <ul id="menu" class="nav nav--links-right hide">
+        
+                        <li><a href="#">Login</a></li>
+                        <li><a class="cfa-btn" href="#">Get Started</a></li>
+        
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
 
 
@@ -45,49 +51,60 @@
 
     <main>
         <section class="hero">
-          <picture>
-              
-              <source media="(min-width: 900px)" srcset="/dist/img/hero-img-desktop.png">
-              <source media="(min-width: 600px)" srcset="/dist/img/hero-img-tablet.png">
-              <source srcset="/dist/img/hero-img-mobile.png">
-              <img src="/dist/img/hero-img-desktop.png" alt="">
+            <div class="wrapper">
 
-              <div class="hero__content">
-
-                <h2>Share your unfiltered thoughts. Get paid.</h2>
-                <p>Spense is open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing just that.</p>
-
-                <ul>
-                    <li>Receive 99% off the earnings.</li>
-                    <li>Get paid viea Debit Card, ACH, or PayPal</li>
-                    <li>Withdraw your earnings anytime</li>
-                </ul>
-
-                <form action="#">
-                    <label for="email-input">
-                        <input id="email-input" type="email" placeholder="john@example.com">
-                    </label>
-                    <label for="submit-btn">
-                        <input id="submit-btn" type="submit" value="Get Started">
-                    </label>
-                </form>
-
-              </div>
-             
-          </picture>
+                <picture>
+                    
+                    <source media="(min-width: 900px)" srcset="/dist/img/hero-img-desktop.png">
+                    <source media="(min-width: 600px)" srcset="/dist/img/hero-img-tablet.png">
+                    <source srcset="/dist/img/hero-img-mobile.png">
+                    <img src="/dist/img/hero-img-desktop.png" alt="">
+                </picture>
+                <div class="hero__content">
+      
+                      <h2>Share your unfiltered thoughts. Get paid.</h2>
+                      <p>Spense is open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing just that.</p>
+      
+                      <ul class="hero__content__list">
+                          <li>Receive 99% off the earnings.</li>
+                          <li>Get paid viea Debit Card, ACH, or PayPal</li>
+                          <li>Withdraw your earnings anytime</li>
+                      </ul>
+      
+                      <form action="#">
+                          <label for="email-input">
+                              <input class="email-input" id="email-input" type="email" placeholder="john@example.com">
+                          </label>
+                          <label for="submit-btn">
+                              <input class="cfa-btn" id="submit-btn" type="submit" value="Get Started">
+                          </label>
+                      </form>
+      
+                </div>
+                   
+                
+            </div>
         </section>
 
         <section class="logos">
-            <div class="logo__container">
+            <div class="wrapper">
 
-                <img src="/dist/img/Facebook Logo.png" alt="">
-                <img src="/dist/img/Dribbble Logo.png" alt="">
-                <img src="/dist/img/Youtube Logo.png" alt="">
+                <div class="logo__container">
+    
+                    <img src="/dist/img/Facebook Logo.png" alt="">
+                    <img src="/dist/img/Dribbble Logo.png" alt="">
+                    <img src="/dist/img/Youtube Logo.png" alt="">
+                    <img src="/dist/img/Pinterest Logo.png" alt="">
+                    <img src="/dist/img/Twitter Logo.png" alt="">
+                    <img src="/dist/img/Reddit Logo.png" alt="">
+                    <img src="/dist/img/Google Logo.png" alt="">
+                    <img src="/dist/img/Slack Logo.png" alt="">
+                </div>
             </div>
 
         </section>
 
-        <section class="secure">
+        <section class="secure wrapper">
 
            <div class="secure__text">
                 <h2>
@@ -109,57 +126,61 @@
 
         </section>
         <section class="editor">
-            <div class="editor__content">
-                <h2>A text editor like no other.</h2>
-                <p>Our text editor pulls you into focus mode with it's simplistic design and usability so you can put out your best writings.</p>
-                <a href="#">Text Editor Live Demo</a>
-            </div>
-            <div class="editor__img">
-                <img src="/dist/img/Text Editor.png" alt="a screenshot of an computer desktop">
+            <div class="wrapper">
+                <div class="editor__content">
+                    <h2>A text editor like no other.</h2>
+                    <p>Our text editor pulls you into focus mode with it's simplistic design and usability so you can put out your best writings.</p>
+                    <a href="#">Text Editor Live Demo</a>
+                </div>
+                <div class="editor__img">
+                    <img src="/dist/img/Text Editor.png" alt="a screenshot of an computer desktop">
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
+        <div class="wrapper">
 
-        <div class="footer__content">
-
-
-            <div class="footer__about">
-                <h3>spense</h3>
-                <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get padi for doing just that.</p>
+            <div class="footer__content">
+    
+    
+                <div class="footer__about">
+                    <h3>spense</h3>
+                    <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get padi for doing just that.</p>
+                </div>
+    
+                <div class="footer__company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__opportunities">
+                    <h3>Opportunities</h3>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="footer__sitemap">
+                    <h3>Sitemap</h3>
+                    <ul>
+                        <li><a href="#">Homepage</a></li>
+                    </ul>
+                </div>
+                <div class="footer__resources">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+    
+    
             </div>
-
-            <div class="footer__company">
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Customers</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="footer__opportunities">
-                <h3>Opportunities</h3>
-                <ul>
-                    <li><a href="#">Jobs</a></li>
-                </ul>
-            </div>
-            <div class="footer__sitemap">
-                <h3>Sitemap</h3>
-                <ul>
-                    <li><a href="#">Homepage</a></li>
-                </ul>
-            </div>
-            <div class="footer__resources">
-                <h3>Resources</h3>
-                <ul>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-
-
         </div>
 
     </footer>

@@ -78,12 +78,41 @@ select {
 
 /* Reset End */
 
+:root {
+
+  --beige-color: #F0EEEB;
+  --link-color: #746F62;
+  --text-color: #5E5849;
+  --black: #000;
+
+}
+
 body {
     font-family: 'Cabin', sans-serif;
 }
 
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+  
+}
+
 /* Utility Classes */
 
+.cfa-btn {
+  background-color: var(--black);
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* only for screen readers */
 .sr-only {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -92,4 +121,155 @@ body {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+/* container classes */
+.wrapper {
+
+  width: 90vw;
+  width: clamp(23.4375rem, 90vw, 90rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  position: relative;
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+
+/* Header section */
+
+.header {
+  background-color: var(--beige-color);
+  
+}
+
+.header__notification {
+  background-color: var(--black);
+  color: #ffff;
+  text-align: center;
+  padding: 1em 0.4em;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+
+.mobile-nav-btn {
+  padding: 1em;
+  background-image: url(/dist/img/Hamburger\ Menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+
+.nav.hide {
+  display: none;
+}
+
+
+
+
+
+/* Hero Section */
+
+.hero {
+  background-color: var(--beige-color);
+  padding-top: 1em;
+}
+
+.hero__content {
+  margin-top: 2em;
+}
+
+.hero__content h2 {
+
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.hero__content p {
+  padding: 1em 0;
+}
+
+.hero__content p,
+li {
+  color: var(--text-color);
+}
+
+.hero__content li {
+  list-style: url(/dist/img/Checkmark.svg);
+  font-weight: 700;
+}
+
+.hero__content form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 2em;
+}
+
+.email-input {
+  display: inline-block;
+  padding: 0.4em 0.5em;
+  border: none;
+  border-radius: 5px;
+}
+
+
+
+
+/* logo container section */
+
+.logo__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo__container img {
+
+  
+  max-width: 100px;
+  height: auto;
+  margin-right: 0.6em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+
+/* secure section */
+
+.secure {
+}
+
+.secure__text {
+  
+  background-color: var(--beige-color);
+  padding: 1.5em 1.5em 0 1.5em;
+  border-radius: 10px;
+}
+
+.secure__text h2 {
+  font-size: 30px;
+  line-height: 1.2;
 }
