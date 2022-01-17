@@ -220,6 +220,31 @@ a {
 
 @media (min-width: 600px) {
 
+  .header {
+    position: static;
+  }
+  .mobile-nav-btn {
+    display: none;
+  }
+
+  .nav-container {
+    position: static;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    height: auto;
+    left: 0;
+    top: 0;
+    z-index: none;
+    background-color: transparent;
+    flex: 100%;
+    box-shadow: none;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
 
 }
 
