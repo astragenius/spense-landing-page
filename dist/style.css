@@ -398,7 +398,7 @@ li {
 /* Desktop version */
 @media (min-width: 900px) {
   .secure__content {
-    display: flex;
+        display: flex;
   }
 }
 
