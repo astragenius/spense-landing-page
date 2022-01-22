@@ -146,7 +146,7 @@ a {
 
 .header {
   background-color: var(--beige-color);
-  position: relative;
+  
 }
 
 .header__notification {
@@ -167,7 +167,9 @@ a {
   font-size: 20px;
 }
 
-
+.navigation {
+  position: relative;
+}
 .mobile-nav-btn {
   padding: 1em;
   background-image: url(/dist/img/Hamburger\ Menu.svg);
@@ -186,13 +188,15 @@ a {
   justify-content: center;
   width: 90vw;
   height: 50vh;
-  left: 4%;
-  top: 100%;
+  right:0;
   background-color: var(--beige-color);
   z-index: 1000;
   border-radius: 5px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translate(-50%, -50%);
+  top: 800%;
+  left: -400%;
 }
 
 .nav-container ul {
