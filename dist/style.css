@@ -146,7 +146,7 @@ a {
 
 .header {
   background-color: var(--beige-color);
-  
+  /* position: relative; */
 }
 
 .header__notification {
@@ -215,7 +215,7 @@ a {
 }
 
 
-.nav-container.hide {
+[data-visibile = false] {
   display: none;
 }
 
@@ -223,6 +223,11 @@ a {
 /* Header/Navigation tablet version */
 
 @media (min-width: 600px) {
+
+  [data-visibile = false] {
+    display: flex;
+  }
+  
 
   .header {
     position: static;
